@@ -1,0 +1,62 @@
+Typy danych:
+
+Typy calkowitolicznowe
+byte - 1 bajt pamięci, liczby z zakresu od -128 do 127,
+short - 2 bajty pamięci, liczby z zakresu od -32 768 do 32 767,
+int - 4 bajty pamięci, liczby z zakresu od -231 do 231-1,
+long - 8 bajtów pamięci, liczby z zakresu od -263 do 263-1.
+
+W praktyce najczęściej wykorzystywany jest typ int, ponieważ jest on najbardziej uniwersalny.
+Jeżeli chcesz używać typu long powinieneś na końcu liczby dodać literkę l lub L (np. 10000000L),
+zapisanie liczby wykraczającej poza zakres int bez dodatkowej literki spowoduje błąd i program się
+ nie skompiluje.
+
+
+Zmienno przecinkowe
+
+float - 4 bajty pamięci, pojedyncza precyzja - ok 8 cyfr znaczących po przecinku,
+double - 8 bajtów, podwójna precyzja - ok 16 cyfr znaczących po przecinku.
+
+
+Jeśli chcesz, żeby liczba była reprezentowana jako typ float to należy na końcu dopisać literkę f lub
+ F, np. 123.456f. Liczba zmiennoprzecinkowa bez dopisania literki f lub F domyślnie jest typu double.
+
+Warto dodać, że od wersji Javy 7 możliwe jest używanie podkreśleń dla zwiększenia czytelności kodu.
+Liczbę 999999 możemy więc zapisać także jako 999_999 - są to zapisy równoznaczne.
+
+Typ znakowy (char)
+
+Do reprezentacji znaków (liter, znaków specjalnych, ale też cyfr w rozumieniu znakowym a nie liczbowym) służy typ char
+ (skrót od character).
+W Javie jest to zestaw znaków Unicode zakodowanych przy pomocy UTF-16 (istnieje jednak możliwość zmiany kodowania w
+ przypadku np. odczytu i zapisu do plików).
+Taki sposób reprezentacji znaków pozwala w Javie przedstawić praktycznie każdy znak dowolnego języka świata oraz
+dodatkowe symbole.
+
+Pojedyncze znaki zapisywane są zawsze pomiędzy pojedynczymi cudzysłowami, czyli np. 'a', 'b', '$', '1', należy również
+pamiętać, że w pojedynczym cudzysłowie nie
+możemy zapisać kilku znaków (napisu), ponieważ spowoduje to błąd kompilacji.
+
+W Javie możemy reprezentować znaki korzystając ze standardu Unicode, np. literę 'A' możemy zapisać jako '\u0041'. Istnieje również kilka znaków specjalnych, których
+zapis musimy poprzedzić znakiem backslash "\", wśród nich najważniejsze to:
+
+\" - cudzysłów,
+\' - apostrof,
+\n - znak przejścia do nowej linii,
+\t - znak tabulacji (tab),
+\\ - backslash.
+
+Typ logiczny (boolowski)
+
+W Javie typ logiczny oznaczany jest jako boolean i może przyjmować tylko dwie wartości:
+
+true (prawda),
+false (fałsz).
+
+
+Typ String
+
+Reprezentuje on ciąg znaków i zapisywany jest w podwójnych cudzysłowach,
+
+Liczby, znaki, wartości true i false oraz napisy zapisane w podwójnych cudzysłowach nazywamy literałami (reprezentacja\
+pewnej konkretnej wartości zapisanej bezpośrednio w kodzie źródłowym).
