@@ -14,6 +14,6 @@ public class Conversion {
         System.out.println("Narrowing: " + narrowing);
         System.out.println("Widening: " + widening);
 
- 
+
     }
 }
