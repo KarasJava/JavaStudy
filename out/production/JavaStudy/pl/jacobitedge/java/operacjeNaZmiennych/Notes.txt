@@ -1,0 +1,45 @@
+Podstawowe operatory matematyczne
+
++ (dodawanie),
+- (odejmowanie),
+* (mnożenie),
+/ (dzielenie),
+% (modulo / reszta z dzielenia).
+
+Operatory skrócone
+
+x = x+5;
+
+Operatory porównania
+
+== (równość wartości, np. "2 == 2"),
+!= (nierówność wartości, np. "czy trzy jest różne od 2" zapiszemy "3 != 2"),
+>, >= (większy, bądź większy równy, np. "3 > 2"),
+<, <= (mniejszy bądź mniejszy równy, np. "5 < 10",
+instanceof (dotyczy typów obiektowych, np. String. Nie może być użyte w kontekście typów prostych. Przykład "Napis" instanceof String).
+
+
+Operatory logiczne
+
+&& - operator koniunkcji. Zwraca true tylko i wyłącznie wtedy kiedy zachodzi true && true,
+|| - operator alternatywy. Zwraca true, gdy co najmniej jeden z warunków jest spełniony, czyli true || false lub false || true lub true || true.
+
+
+Inkrementacja i dekrementacja
+
+przyrostkowa (zapis x++ dla zwiększania lub x-- dla zmniejszania)
+przedrostkowa (zapis ++x dla zwiększania lub --x dla zmniejszania)
+
+Konkatenacja
+
+Znak + (plus) ma swoje oczywiste zastosowanie w przypadku liczb, jednak jak się okazuje można go używać również w przypadku napisów.
+Jak zapewne już zauważyłeś zapisywanie każdej instrukcji w osobnych liniach jest bez sensu i niepotrzebnie rozwleka kod, dlatego
+od tej pory będziemy używali operatora + dla upraszczania napisów.
+
+
+Konwersje typów
+
+W Javie zmianę typu zmiennej nazywamy konwersją typu i może ona przyjmować dwie formy:
+
+rozszerzającą (typ mniej szczegółowy przekształcamy na bardziej szczegółowy, np. int > double),
+zawężającą (typ bardziej szczegółowy przekształcamy na typ mniej szczegółowy, np. double > int).
